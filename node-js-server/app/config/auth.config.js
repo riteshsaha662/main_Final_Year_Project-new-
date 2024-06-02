@@ -1,3 +1,6 @@
+// module.exports = {
+//   secret: "codebudoder-secret-key"
+// };
 module.exports = {
-  secret: "codebudoder-secret-key"
+  secret: process.env.SECRET_KEY
 };

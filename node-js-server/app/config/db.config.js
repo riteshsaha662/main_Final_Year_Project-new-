@@ -3,7 +3,11 @@
 //   PORT: 27017,
 //   DB: "Student_db"
 // };
+// module.exports = {
+//   // Connection string format for MongoDB Atlas
+//   URI: "mongodb+srv://sonuh269:9YTY625IF2HFloS0@cluster0.gwppitp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// };
 module.exports = {
-  // Connection string format for MongoDB Atlas
-  URI: "mongodb+srv://sonuh269:9YTY625IF2HFloS0@cluster0.gwppitp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  // Connection string format for MongoDB Atlas using environment variable
+  URI: process.env.MONGODB_URI
 };
